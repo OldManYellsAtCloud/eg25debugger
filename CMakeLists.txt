@@ -12,7 +12,6 @@ find_package(Qt6 6.2 REQUIRED COMPONENTS Quick SerialPort)
 qt_add_executable(appeg25debugger
     main.cpp
     eg25connection.h eg25connection.cpp
-    at_commands.h
 )
 
 qt_add_qml_module(appeg25debugger
