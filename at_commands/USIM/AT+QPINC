@@ -2,5 +2,6 @@ Test: Y
 Read: Y
 Write: Y
 Execute:
-Description:
 Name: Display PIN Remainder Counter
+Description: This command queries the number of attempts left to enter the password of (U)SIM PIN/PUK.
+Parameter: facility: "SC" - SIM PIN, "P2" SIM PIN2

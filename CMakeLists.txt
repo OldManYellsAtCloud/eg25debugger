@@ -18,6 +18,7 @@ qt_add_qml_module(appeg25debugger
     URI eg25debugger
     VERSION 1.0
     QML_FILES Main.qml
+    QML_FILES SimUnlock.qml
 )
 
 target_link_libraries(appeg25debugger

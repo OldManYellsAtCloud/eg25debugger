@@ -2,5 +2,10 @@ Test: Y
 Read: Y
 Write: Y
 Execute:
-Description:
 Name: (U)SIM Card Detection
+Description: This command enables (U)SIM card hot-swap function. (U)SIM card is detected by GPIO interrupt. The
+level of (U)SIM card detection pin should also be set when (U)SIM card is inserted.
+AT+QSIMDET (U)SIM Card Detection
+Parameters: enable,insert_level
+enable - 0: disabled, 1: enabled
+insert_level: 0: low level, 1: high level

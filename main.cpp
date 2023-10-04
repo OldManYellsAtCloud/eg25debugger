@@ -18,10 +18,9 @@ int main(int argc, char *argv[])
         }, Qt::QueuedConnection);
     engine.load(url);
 
-    auto *whatev = new eg25connection();
+    /*auto *whatev = new eg25connection();
     whatev->writeData("ATI");
     sleep(1);
-    whatev->writeData("AT+GMI");
-
+    whatev->writeData("AT+GMI"); */
     return app.exec();
 }

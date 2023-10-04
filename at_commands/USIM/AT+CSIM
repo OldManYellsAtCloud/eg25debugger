@@ -2,5 +2,9 @@ Test: Y
 Read:
 Write: Y
 Execute:
-Description:
 Name: Generic (U)SIM Access
+Description: This command allows a direct control of the (U)SIM that is installed in the currently selected card slot by a distant application on the TE. The TE shall then keep the processing of (U)SIM information within the frame specified by GSM/UMTS.
+
+Parameter: length,command
+length: length of command
+command: command (ehhh....)

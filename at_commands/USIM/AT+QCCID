@@ -2,5 +2,5 @@ Test: Y
 Read:
 Write:
 Execute: Y
-Description:
 Name: Show ICCID
+Description: This command returns the ICCID (Integrated Circuit Card Identifier) number of (U)SIM card.

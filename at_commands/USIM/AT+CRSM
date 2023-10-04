@@ -2,5 +2,6 @@ Test: Y
 Read:
 Write: Y
 Execute:
-Description:
 Name: Restricted (U)SIM Access
+Description: This command offers easy and limited access to the (U)SIM database. It transmits the (U)SIM command number <command> and its required parameters to the MT.
+Parameter: command[,<field>[,<P1>, <P2>, <P3>[, <data>][,<pathId>]]]

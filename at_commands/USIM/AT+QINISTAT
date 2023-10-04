@@ -2,5 +2,5 @@ Test: Y
 Read:
 Write:
 Execute: Y
-Description:
 Name: Query Initialization Status of (U)SIM Card
+Description: This command queries the initialization status of (U)SIM card.

@@ -2,5 +2,9 @@ Test: Y
 Read: Y
 Write: Y
 Execute:
-Description:
 Name: Fix (U)SIM Card Supply Voltage
+Description: This command fixes supply voltage of (U)SIM card. For a common UICC, the supply voltage of (U)SIM
+card is usually 1.8V or 3.0V.
+Parameter: 0 - No fixed voltage
+1 - 1.8V
+2 - 3.3V

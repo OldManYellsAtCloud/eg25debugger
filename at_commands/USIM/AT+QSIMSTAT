@@ -2,5 +2,8 @@ Test: Y
 Read: Y
 Write: Y
 Execute:
-Description:
 Name: (U)SIM Card Insertion Status Report
+Description: This command queries (U)SIM card insertion status or determines whether to report (U)SIM card insertion
+status.
+Parameter: 0 - Disable
+1 - Enable
