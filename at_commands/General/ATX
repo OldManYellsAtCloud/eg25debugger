@@ -1,0 +1,20 @@
+Test: 
+Read: 
+Write: 
+Execute: Y
+Name: Set CONNECT Result Code Format and Monitor Call Progress
+Description: This command determines whether TA transmits particular result codes to the TE or not. It also controls
+whether TA detects the presence of a dial tone when it begins dialing and the engaged tone (busy signal)
+or not.
+
+Parameter: value - integer.
+
+0 Only CONNECT result code returned, dial tone and busy detection are both disabled.
+1 Only CONNECT<text> result code returned, dial tone and busy detection are both
+disabled.
+2 CONNECT<text> result code returned, dial tone detection is enabled, and busy
+detection is disabled.
+3 CONNECT<text> result code returned, dial tone detection is disabled, and busy
+detection is enabled.
+4 CONNECT<text> result code returned, and dial tone and busy detection are both
+enabled.

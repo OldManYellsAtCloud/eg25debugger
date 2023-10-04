@@ -1,0 +1,10 @@
+Test: 
+Read: 
+Write: 
+Execute: Y
+Name: Set all Current Parameters to User-defined Profile
+Description: This command first resets the AT command settings to their manufacturer defaults. Afterwards, the AT
+command settings are restored from the user-defined profile in the non-volatile memory, if they have been
+stored with AT&W before.
+
+Parameter: <value>: integer

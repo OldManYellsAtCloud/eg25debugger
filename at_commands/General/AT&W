@@ -1,0 +1,8 @@
+Test: 
+Read: 
+Write: 
+Execute: Y
+Name: Store Current Settings to User-defined Profile
+Description: This command stores the current AT command settings to a user-defined profile in non-volatile memory.
+
+Parameter: n - integer. Profile number to store current AT command settings
