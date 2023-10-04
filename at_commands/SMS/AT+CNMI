@@ -1,7 +1,6 @@
 Test: Y
 Read: Y
 Write: Y
-Execute: 
-Name: 
-Description: 
+Execute:
+Description:
 Name: SMS Event Reporting Configuration

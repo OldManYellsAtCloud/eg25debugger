@@ -1,7 +1,6 @@
-Test: 
+Test:
 Read: Y
 Write: Y
-Execute: 
-Name: 
-Description: 
+Execute:
+Description:
 Name: Set Pause before Blind Dialing

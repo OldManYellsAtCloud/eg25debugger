@@ -1,6 +1,6 @@
-Test: 
-Read: 
-Write: 
+Test:
+Read:
+Write:
 Execute: Y
 Name: Set CONNECT Result Code Format and Monitor Call Progress
 Description: This command determines whether TA transmits particular result codes to the TE or not. It also controls

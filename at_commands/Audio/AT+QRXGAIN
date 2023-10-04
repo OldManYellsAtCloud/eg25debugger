@@ -1,7 +1,6 @@
 Test: Y
 Read: Y
 Write: Ys
-Execute: 
-Name: 
-Description: 
+Execute:
+Description:
 Name: Set Downlink Gains of RX

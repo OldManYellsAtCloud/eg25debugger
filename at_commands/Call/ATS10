@@ -1,7 +1,6 @@
-Test: 
+Test:
 Read: Y
 Write: Y
-Execute: 
-Name: 
-Description: 
+Execute:
+Description:
 Name: Set Disconnection Delay after Indicating the Absence of Data Carrier
