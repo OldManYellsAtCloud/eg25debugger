@@ -4,6 +4,7 @@ project(eg25debugger VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_STANDARD 20)
 
 find_package(Qt6 6.2 REQUIRED COMPONENTS Quick SerialPort)
 
@@ -11,6 +12,7 @@ find_package(Qt6 6.2 REQUIRED COMPONENTS Quick SerialPort)
 qt_add_executable(appeg25debugger
     main.cpp
     eg25connection.h eg25connection.cpp
+    at_commands.h
 )
 
 qt_add_qml_module(appeg25debugger

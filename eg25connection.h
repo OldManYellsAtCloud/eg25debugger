@@ -5,6 +5,7 @@
 #include <thread>
 
 #include <QtSerialPort/QSerialPort>
+#include <QFile>
 
 class eg25connection : public QObject
 {
@@ -15,10 +16,13 @@ private:
     QSerialPort *serialPort = nullptr;
     char buffer[1024];
     std::vector<std::string> *logbook;
+    QFile *file;
+    QTextStream *logFile;
 
-    std::thread readerThread;
+    std::thread *readerThread;
     bool running = true;
 
+    void truncateVector();
 public:
     explicit eg25connection(QObject *parent = nullptr);
     ~eg25connection();
