@@ -2,10 +2,10 @@
 #define EG25CONNECTION_H
 
 #include <QQmlEngine>
-#include <thread>
-
 #include <QtSerialPort/QSerialPort>
 #include <QFile>
+
+#include <at_commands.h>
 
 class eg25connection : public QObject
 {
@@ -14,20 +14,23 @@ class eg25connection : public QObject
 
 private:
     QSerialPort *serialPort = nullptr;
-    char buffer[1024];
-    std::vector<std::string> *logbook;
+    //char buffer[1024];
+    QByteArray buffer;
     QFile *file;
     QTextStream *logFile;
 
-    std::thread *readerThread;
-    bool running = true;
-
     void truncateVector();
+    std::string parseResponse(const std::string& s);
+    bool isResponseFinished(const std::string& response, const std::string& success, const std::string& error);
 public:
     explicit eg25connection(QObject *parent = nullptr);
     ~eg25connection();
-    void readData();
-    void writeData(std::string data);
+    //std::string getResponse(int timeout = 300000);
+    std::string getResponse(const at_command_spec& cmd_spec);
+    //std::string writeData(std::string data);
+    std::string writeData(std::string cmd, const at_command_spec& cmd_spec);
+    Q_INVOKABLE bool unlockSim(QString pin);
+    Q_INVOKABLE void connectToNetwork();
 
 signals:
     void dataAvailable();
