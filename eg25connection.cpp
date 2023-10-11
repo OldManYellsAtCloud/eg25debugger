@@ -133,14 +133,27 @@ bool eg25connection::unlockSim(QString qPin)
     return true;
 }
 
+/**
+ * @brief eg25connection::connectToNetwork
+ * Execute AT commands required to connect to the internet through the
+ * modem. The original APN configuration is incorrect, so first it
+ * is required to disconnect from the network, set the correct config,
+ * then reconnect to the network.
+ *
+ * Finally make sure that cellular connection is enabled. It seems that
+ * sometimes (randomly for some reason?) it is not enabled by default.
+ *
+ */
 void eg25connection::connectToNetwork()
 {
+    // TODO: verify successful execution of the commands.
     writeData("AT+QSCLK=0", commands["AT+QSCLK"]);
     writeData("AT+CGATT=0", commands["AT+CGATT"]);
     writeData("AT+CFUN=4", commands["AT+CFUN"]);
     writeData("AT+CGDCONT=1,\"IP\",\"internet\"", commands["AT+CGDCONT"]);
     writeData("AT+CFUN=1", commands["AT+CFUN"]);
     writeData("AT+CGATT=1", commands["AT+CGATT"]);
+    system("connmanctl enable cellular");
 }
 
 
